@@ -1,4 +1,4 @@
-# SpaceClient
+# SpaceClient (Requires Java)
 SpaceClient for Hypixel Skyblock
 
 !!  Installation Process:
@@ -22,5 +22,5 @@ SpaceClient for Hypixel Skyblock
 1. Open this link: "https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html".
 2. Click on installer.
 3. Wait 5 seconds, then click skip at the top right corner.
-4. Click open the forge installer file that was just downloaded (java required).
+4. Click open the forge installer file that was just downloaded.
 5. Press OK, then after it installs, press OK again. Forge should now be installed.
