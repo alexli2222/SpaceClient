@@ -16,6 +16,8 @@ SpaceClient for Hypixel Skyblock
 
 !!  How to Install Forge:
 
-1. Download forge using this link: "https://maven.minecraftforge.net/net/minecraftforge/1.8.9-11.15.1.2318-1.8.9/forge-1.8.9-11.15.1.2318-1.8.9-installer.jar".
-2. Click open the forge installer file (java required).
-3. Press OK.
+1. Open this link: "https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html".
+2. Click on installer.
+3. Wait 5 seconds, then click skip at the top right corner.
+4. Click open the forge installer file that was just downloaded (java required).
+5. Press OK.
