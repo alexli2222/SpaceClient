@@ -7,6 +7,7 @@ SpaceClient for Hypixel Skyblock
 1. Download and run SpaceClient from releases.
 2. Select the mods you want to download.
 3. Click install, and wait for it to finish. It will close after finishing. If there is an error, contact me. Discord: "FakeAlex#1407".
+------Steps below only need to be done once.------
 4. Go to Minecraft Launcher and create a new installation.
 5. Select any version of forge-1.8.9, some won't work, I suggest just downloading the latest forge version.
 6. Click on browse under game directory.
