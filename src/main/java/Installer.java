@@ -67,23 +67,15 @@ public class Installer {
         }
         if (Window.Dulk.isSelected()) {
             if (new File(modPath + File.separator + "OldAnimations.jar").exists()) {
-                System.out.println("Found incompatibility: DulkirMod & OldAnimations, deleting OldAnimations.jar...");
-                if (new File(modPath + File.separator + "OldAnimations.jar").delete()) {
-                    System.out.println("Successfully deleted OldAnimations.jar.");
-                } else {
-                    System.out.println("Failed to delete OldAnimations.jar, please manually delete as otherwise there might be an issue.");
-                }
+                System.out.println("Found incompatibility: DulkirMod & OldAnimations.");
+                removeMod("OldAnimations");
             }
             downloadMod("DulkirMod");
         }
         if (Window.OA.isSelected()) {
             if (new File(modPath + File.separator + "DulkirMod.jar").exists()) {
-                System.out.println("Found incompatibility: OldAnimations & DulkirMod, deleting DulkirMod.jar...");
-                if (new File(modPath + File.separator + "DulkirMod.jar").delete()) {
-                    System.out.println("Successfully deleted DulkirMod.jar.");
-                } else {
-                    System.out.println("Failed to delete DulkirMod.jar, please manually delete as otherwise there might be an issue.");
-                }
+                System.out.println("Found incompatibility: OldAnimations & DulkirMod.");
+                removeMod("DulkirMod");
             }
             downloadMod("OldAnimations");
         }
@@ -120,7 +112,15 @@ public class Installer {
                 System.out.println("Download for " + mod + ".jar failed.");
             }
         } else {
-            System.out.println(mod + " already exists, skipping...");
+            System.out.println(mod + " already exists.");
+        }
+    }
+    public static void removeMod(String mod) {
+        System.out.println("Deleting " + mod + ".jar...");
+        if (new File(modPath + File.separator + mod + ".jar").delete()) {
+            System.out.println("Successfully deleted " + mod + ".jar.");
+        } else {
+            System.out.println("Failed to delete " + mod + ".jar, please manually delete as otherwise there might be an issue.");
         }
     }
     public static void downloadMC() {

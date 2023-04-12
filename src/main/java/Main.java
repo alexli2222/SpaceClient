@@ -18,6 +18,12 @@ public class Main {
             System.out.println("console.test.success");
         } else if (Objects.equals(cmd, "app.exit")){
             System.exit(0);
+        } else if (cmd.startsWith("file.downloadmod ")) {
+            String mod = cmd.substring(17);
+            Installer.downloadMod(mod);
+        } else if (cmd.startsWith("file.removemod ")) {
+            String mod = cmd.substring(15);
+            Installer.removeMod(mod);
         } else {
             System.out.println("error.unkownCommandError");
         }
